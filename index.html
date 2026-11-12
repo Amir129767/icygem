@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#05060c">
+  <meta name="description" content="ICYGEM — Two Names, One Creative Mind. Jesus, music producer and mixer; ICY, the artist.">
+  <meta property="og:title" content="ICYGEM — Two Names, One Creative Mind">
+  <meta property="og:description" content="Two names, two roles, but one creative identity.">
+  <meta property="og:image" content="assets/og-cover.svg">
+  <title>ICYGEM — Two Names, One Creative Mind</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="ICYGEM home"><span class="gem">✦</span> ICYGEM</a>
+    <span class="top-caption">TWO NAMES · ONE CREATIVE MIND</span>
+  </header>
+  <main id="home">
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> MUSIC · PRODUCTION · ART</div>
+      <h1>Two Names,<br><span>One Creative Mind.</span></h1>
+      <p class="intro">Two identities. Two roles. One vision shaped through sound.</p>
+      <a class="scroll-cue" href="#story">DISCOVER THE STORY <span>↓</span></a>
+    </section>
+    <section id="story" class="story">
+      <div class="section-label">THE IDENTITY <span>01 / 02</span></div>
+      <div class="story-grid">
+        <article class="identity">
+          <div class="identity-number">01</div><h2>JESUS</h2>
+          <div class="role">PRODUCER &amp; MIXING</div>
+          <p>The first name is Jesus, known for his work in music production and mixing.</p>
+        </article>
+        <div class="connector"><span>✦</span></div>
+        <article class="identity">
+          <div class="identity-number">02</div><h2>ICY</h2>
+          <div class="role">ARTIST</div>
+          <p>The second name is ICY, the name he uses as an artist.</p>
+        </article>
+      </div>
+      <div class="manifesto">
+        <span class="manifesto-mark">“</span>
+        <p>Jesus transforms ideas into musical pieces, and ICY brings those pieces to their final form.</p>
+        <div class="manifesto-bottom">TWO NAMES. TWO ROLES. ONE CREATIVE IDENTITY.</div>
+      </div>
+    </section>
+    <section class="links-section">
+      <div class="section-label">LISTEN &amp; FOLLOW <span>02 / 02</span></div>
+      <h2 class="links-title">Enter the <span>sound.</span></h2>
+      <div class="platforms">
+        <button class="platform" data-platform="soundcloud" aria-label="Open SoundCloud link panel">
+          <span class="platform-icon soundcloud-icon">☁</span><span>SoundCloud</span><span class="arrow">↗</span>
+        </button>
+        <button class="platform" data-platform="youtube" aria-label="Open YouTube link panel">
+          <span class="platform-icon youtube-icon">▶</span><span>YouTube</span><span class="arrow">↗</span>
+        </button>
+      </div>
+      <div class="link-panel" id="linkPanel" aria-live="polite">
+        <div class="panel-content"><div class="panel-title" id="panelTitle">SOUNDCLOUD</div><p id="panelText">Listen to ICYGEM on SoundCloud.</p><a id="panelLink" href="#" target="_blank" rel="noopener noreferrer">OPEN PLATFORM ↗</a></div>
+        <button class="panel-close" id="panelClose" aria-label="Close panel">×</button>
+      </div>
+    </section>
+  </main>
+  <footer><span>ICYGEM <span class="footer-star">✦</span></span><span>Two names, two roles, but one creative identity.</span><span>© <span id="year"></span></span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
